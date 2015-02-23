@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zda-yy-Q2f">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="????" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB9-U0-ksh">
+                                <rect key="frame" x="280" y="157" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OH2-O2-luj">
+                                <rect key="frame" x="238" y="186" width="123" height="30"/>
+                                <color key="backgroundColor" red="0.7562359957" green="0.66402732220000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Mostrar Resposta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mostrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ex-Y4-fSf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKL-oO-JPX">
+                                <rect key="frame" x="240" y="87" width="119" height="30"/>
+                                <color key="backgroundColor" red="0.75623599571686939" green="0.66402732218905525" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Mostrar Pergunta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="proxima:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWQ-fZ-c60"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="156" placeholderIntrinsicHeight="25" translatesAutoresizingMaskIntoConstraints="NO" id="JdV-za-3bS">
+                                <rect key="frame" x="203" y="286" width="193" height="41"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="JdV-za-3bS" firstAttribute="top" secondItem="OH2-O2-luj" secondAttribute="bottom" constant="73" id="5Cd-Bb-xiw"/>
+                            <constraint firstItem="RKL-oO-JPX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="GH1-6k-7n4"/>
+                            <constraint firstAttribute="centerX" secondItem="OH2-O2-luj" secondAttribute="centerX" id="Ges-9D-9bH"/>
+                            <constraint firstAttribute="centerX" secondItem="JdV-za-3bS" secondAttribute="centerX" constant="1" id="JYK-w1-MyZ"/>
+                            <constraint firstAttribute="centerX" secondItem="RKL-oO-JPX" secondAttribute="centerX" id="O3f-mN-eqw"/>
+                            <constraint firstItem="OH2-O2-luj" firstAttribute="top" secondItem="YB9-U0-ksh" secondAttribute="bottom" constant="8" id="R4D-IN-VmE"/>
+                            <constraint firstAttribute="centerX" secondItem="Zda-yy-Q2f" secondAttribute="centerX" id="hoG-lm-SK5"/>
+                            <constraint firstAttribute="centerX" secondItem="YB9-U0-ksh" secondAttribute="centerX" id="lPN-Kb-KaN"/>
+                            <constraint firstItem="YB9-U0-ksh" firstAttribute="top" secondItem="RKL-oO-JPX" secondAttribute="bottom" constant="33" id="lo3-EX-qry"/>
+                            <constraint firstItem="RKL-oO-JPX" firstAttribute="top" secondItem="Zda-yy-Q2f" secondAttribute="bottom" constant="14" id="p4a-gn-EON"/>
+                            <constraint firstItem="Zda-yy-Q2f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="yTP-Qh-zHq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagem" destination="JdV-za-3bS" id="HsM-8w-3JV"/>
+                        <outlet property="pergunta" destination="Zda-yy-Q2f" id="r7U-Ua-IsN"/>
+                        <outlet property="resposta" destination="YB9-U0-ksh" id="XhM-jE-RSB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="273"/>
+        </scene>
+    </scenes>
+</document>
